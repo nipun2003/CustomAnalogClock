@@ -68,7 +68,7 @@ hour mode or minute mod.
    ### if HourMode is seted false or not declared view look like this
    ![AnalogClock](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/minute.png)
           
-  ### DialCircleColor
+  ### DialColor
   
       This will set the analog clock main circle color
       
