@@ -19,7 +19,10 @@ hour mode or minute mod.
 # Usage
   For using this view you just need to add [AnalogClockView](https://github.com/nipun2003/CustomAnalogClock/blob/main/AnalogClock/app/src/main/java/com/nipunapps/AnalogClockView/AnalogClockView.java) class in your main project
   
-      Important --> If the class show some error you just need to import your project R 
+  
+  
+      Important --> If the class show some error you just need to import your project R
+      and change the package name with your package name
   
   And the [attrs.xml](https://github.com/nipun2003/CustomAnalogClock/blob/main/AnalogClock/app/src/main/res/values/attrs.xml) in your res/values folder.
   
@@ -57,14 +60,16 @@ hour mode or minute mod.
         
   ```
   
-  ### HourMode
-  
-         If hour mode set true the analog clock view set to hour mode view
-          by default view takes minute mode view
+  # HourMode
+   ### if HourMode is seted true view look like this 
+   ![AnalogClock](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/hour.png)
+   
+   ### if HourMode is seted false or not declared view look like this
+   ![AnalogClock](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/minute.png)
           
   ### DialCircleColor
   
-      This will set the analog clock main circle circle
+      This will set the analog clock main circle color
       
   ### SetHourHandColor | MinuteHandColor | SecondHandColor
   
