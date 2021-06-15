@@ -1,0 +1,4 @@
+include ':customanalogclockn'
+include ':customAnalogClockN'
+include ':app'
+rootProject.name = "Crollercl"
