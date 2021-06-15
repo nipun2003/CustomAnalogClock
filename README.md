@@ -42,7 +42,8 @@ hour mode or minute mod.
         app:layout_constraintTop_toTopOf="parent" />
         
         
-        Important --> You just write your project package name instead of my in attribute declaration 
+        Important --> You just write your project package name instead of my
+                      in attribute declaration 
         
   ```
   
@@ -73,7 +74,8 @@ hour mode or minute mod.
       
   ### SetHourHandColor | MinuteHandColor | SecondHandColor
   
-       This will set set the hour indicator color , Minute indicator color and second indicator color respectively
+       This will set set the hour indicator color , Minute indicator color and 
+          second indicator color respectively
        
  ### MainHourColor 
  
@@ -91,7 +93,8 @@ hour mode or minute mod.
    
 # Java Code
 
-      you can set the all attributes by runtime in java by creating instance of the AnalogClockView class
+      you can set the all attributes by runtime in java by creating instance of 
+      the AnalogClockView class
       
   ### setter of java
       
