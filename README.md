@@ -20,6 +20,8 @@ hour mode or minute mod.
    ### Step1.Add the JitPack repository to your build file
    
         Add it in your root build.gradle at the end of repositories:
+        
+            maven { url 'https://jitpack.io' }
 ![maven](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/maven.png)
 
   ### Step 2. Add the dependency
