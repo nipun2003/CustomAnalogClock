@@ -1,5 +1,5 @@
 # CustomAnalogClock
-It is simple and fully customize analog clock view which gives you to set the analog clock in 
+It is simple and fully customizable analog clock view which gives you to set the analog clock in 
 hour mode or minute mod.
 
 
@@ -16,17 +16,16 @@ hour mode or minute mod.
 ![AnalogClock](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/hour.png)
 
 
-# Usage
-  For using this view you just need to add [AnalogClockView](https://github.com/nipun2003/CustomAnalogClock/blob/main/AnalogClock/app/src/main/java/com/nipunapps/AnalogClockView/AnalogClockView.java) class in your main project
+# How to use
+   ### Step1.Add the JitPack repository to your build file
+   
+        Add it in your root build.gradle at the end of repositories:
+![maven](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/maven.png)
+
+  ### Step 2. Add the dependency
   
-  
-  
-      Important --> If the class show some error you just need to import your project R
-      and change the package name with your package name
-  
-  And the [attrs.xml](https://github.com/nipun2003/CustomAnalogClock/blob/main/AnalogClock/app/src/main/res/values/attrs.xml) in your res/values folder.
-  
-  Than after you just need to implement the code below in your layout file.
+        implementation 'com.github.nipun2003:CustomAnalogClock:0.1.0'
+  ![dependency](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/dependencypic.png)
 
 # Sample code 
 ```
