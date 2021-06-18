@@ -41,9 +41,6 @@ hour mode or minute mod.
         app:layout_constraintTop_toTopOf="parent" />
         
         
-        Important --> You just write your project package name instead of my
-                      in attribute declaration 
-        
   ```
   
   
