@@ -29,7 +29,11 @@ hour mode or minute mod.
         implementation 'com.github.nipun2003:CustomAnalogClock:0.1.0'
   ![dependency](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/dependencypic.png)
 
-# Sample code 
+# XML Code
+
+### sample code
+
+      Add this code in your layout resource file
 ```
   <com.nipunapps.AnalogClockView.AnalogClockView
         android:id="@+id/anlogClockView"
@@ -44,10 +48,12 @@ hour mode or minute mod.
         
         
   ```
+  default view is seted in minute mode 
   
   
-  # Some Important Attributes 
+  # Some Important Attributes of xml
   
+         User can add this attribute in view declare in layout to customize the view
   ```
         app:setHourMode="true"
         app:setDialColor="@color/purple_200"
@@ -59,29 +65,35 @@ hour mode or minute mod.
         
   ```
   
-  # HourMode
-   ### if HourMode is seted true view look like this 
+  # app:setHourMode
+  
+           setHourMode is an attribute of AnalogClockView declare in layout 
+           which take a boolean input true of false.
+           
+           The default HourMode is false.
+   ### if   app:setHourMode="true" view mode convert from minute view to Hour View
    ![AnalogClock](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/hour.png)
    
-   ### if HourMode is seted false or not declared view look like this
+### if   app:setHourMode="false"  or not declared this attribute in layout, view mode sets in minute mode
    ![AnalogClock](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/minute.png)
           
-  ### DialColor
+  ### app:setDialColor
   
-      This will set the analog clock main circle color
+      This is also the view's attribute which take input a color and set the analog clock
+      dial circle color.
       
   ### SetHourHandColor | MinuteHandColor | SecondHandColor
   
-       This will set set the hour indicator color , Minute indicator color and 
-          second indicator color respectively
+       This will set set the hour hand indicator color , Minute hand indicator color and 
+          second hand indicator color respectively
        
  ### MainHourColor 
  
-      This will set the text color of 3,6,9 and 12 and also their indicator
+      This will set the text color of 3,6,9 and 12.
       
 ### SecondaryHourColor 
 
-       This will set the text color of rest hour and their indicator
+       This will set the text color of hour except 3,6,9 and 12.
        
 
 ### After Customization the view can change like this
@@ -91,24 +103,20 @@ hour mode or minute mod.
    
 # Java Code
 
-      you can set the all attributes by runtime in java by creating instance of 
-      the AnalogClockView class
-      
-  ### setter of java
-      
-        .setHourHandColor(int color)
-        
-        .setDialCircleColor(int color)
-        
-        .setMinuteHandColor(int color)
-        
-        .setSecondHandColor(int color)
-        
-        .setIsHour(boolean isHour) // If true it will show Hour Mode View else it will show Minute Mode view
-        
-        .setMainHourColor(int color)
-        
-        .setSecondaryHourColor(int color)
+     You can start using the view in java by initialise view in your activity.
+     
+<span style="background-color: #000000">
+     public class MainActivity extends AppCompatActivity {
+
+     AnalogClockView analogClockView; 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        analogClockView=findViewById(R.id.anlogClockView);
+        }
+</span>
+
       
   
           
