@@ -1,7 +1,8 @@
 # CustomAnalogClock
-It is simple and fully customizable analog clock view which gives you to set the analog clock in 
-hour mode or minute mod.
-
+If you want to display a small and customizable analog clock in your project than you are
+in right place.
+Analogclock view is fully customizable and easy to use android library.
+You can set 2 mode of the  view 1st is minute mode view and 2nd is hour mode view.
 
 
 # Minute mode view
@@ -18,22 +19,21 @@ hour mode or minute mod.
 
 # How to use
    ### Step1.Add the JitPack repository to your build file
-   
-        Add it in your root build.gradle at the end of repositories:
+   Add it in your root build.gradle at the end of repositories:
         
-            maven { url 'https://jitpack.io' }
+    maven { url 'https://jitpack.io' }
 ![maven](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/maven.png)
 
   ### Step 2. Add the dependency
+  Add the dependency in your app level gradle inside dependencies block.
   
-        implementation 'com.github.nipun2003:CustomAnalogClock:0.1.0'
+    implementation 'com.github.nipun2003:CustomAnalogClock:0.1.0'
   ![dependency](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/dependencypic.png)
 
 # XML Code
 
 ### sample code
-
-      Add this code in your layout resource file
+ Add this view in your layout resource file
 ```
   <com.nipunapps.AnalogClockView.AnalogClockView
         android:id="@+id/anlogClockView"
@@ -48,12 +48,11 @@ hour mode or minute mod.
         
         
   ```
-  default view is seted in minute mode 
+  default view is in minute mode 
   
   
   # Some Important Attributes of xml
-  
-         User can add this attribute in view declare in layout to customize the view
+  User can add this attribute in view declare in layout to customize the view
   ```
         app:setHourMode="true"
         app:setDialColor="@color/purple_200"
@@ -66,11 +65,10 @@ hour mode or minute mod.
   ```
   
   # app:setHourMode
-  
-           setHourMode is an attribute of AnalogClockView declare in layout 
+   setHourMode is an attribute of AnalogClockView declare in layout 
            which take a boolean input true of false.
            
-           The default HourMode is false.
+ The default HourMode is false.
    ### if   app:setHourMode="true" view mode convert from minute view to Hour View
    ![AnalogClock](https://github.com/nipun2003/CustomAnalogClock/blob/main/analog%20clock%20pic/hour.png)
    
@@ -79,21 +77,21 @@ hour mode or minute mod.
           
   ### app:setDialColor
   
-      This is also the view's attribute which take input a color and set the analog clock
-      dial circle color.
+ This is also the view's attribute which take input a color and set the analog clock
+dial circle color.
       
   ### SetHourHandColor | MinuteHandColor | SecondHandColor
   
-       This will set set the hour hand indicator color , Minute hand indicator color and 
-          second hand indicator color respectively
+ This will set set the hour hand indicator color , Minute hand indicator color and 
+second hand indicator color respectively
        
  ### MainHourColor 
  
-      This will set the text color of 3,6,9 and 12.
+This will set the text color of 3,6,9 and 12.
       
 ### SecondaryHourColor 
 
-       This will set the text color of hour except 3,6,9 and 12.
+This will set the text color of hour except 3,6,9 and 12.
        
 
 ### After Customization the view can change like this
@@ -103,20 +101,17 @@ hour mode or minute mod.
    
 # Java Code
 
-     You can start using the view in java by initialise view in your activity.
-     
-<span style="background-color: #000000">
-     public class MainActivity extends AppCompatActivity {
-
-     AnalogClockView analogClockView; 
+ You can start using the view in java by initialise view in your activity.
+ 
+    AnalogClockView analogClockView; 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Attaching the view from xml to java
         analogClockView=findViewById(R.id.anlogClockView);
-        }
-</span>
-
+    }
+After attaching the view you can 
       
   
           
